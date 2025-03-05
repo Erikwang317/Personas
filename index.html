@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="header-container">
+            <h1>Understanding Users: Persona Development and Interface Testing</h1>
+        </div>
+        <div class="sub-section">
+            <h3 class="narrative">
+                When evaluating an interface, it’s a good practice to take the targeted users' perspectives. Now let's take a look at this coffeee machine.👇👇 
+            </h3>
+            <div class="interface-container">
+                <img src="./assets/coffee_machine.png" alt="coffee machine interface" class="clickable-img"/>
+                <p>
+                    The coffee machine interface provides a <span class="bold">clear and straightforward</span> process for users to select and brew their desired beverage. The step-by-step instructions on the display guide users through each action, from selecting a drink to placing the coffee pod and cup in the correct locations. The <span class="bold">automatic</span> opening of the coffee holder and the intuitive "Brew" button contribute to a smooth and efficient user experience.                </p>
+            </div>
+        </div>
+        <hr>
+        <div class="sub-section">
+            <h3 class="narrative">
+                It looks like that fancy machine is well-designed! What would our users say about it? Let's interview the real users to find out! 🎙️🎙️
+            </h3>
+            <div class="interview-container">
+                <h3 class="interview-question">
+                    Question 1: Do you think this interface is intuitive enough to navigate through the entire process?
+                </h3>
+                <p class="interview-repsonse">
+                    All users agreed that the interface provides <span class="bold">intuitive and clear</span>instructions. However, the complexity varies depending on the selected beverage. Users opting for coffee found the process more <span class="bold">complicated</span> due to the need to insert coffee pods. And the interface <span class="bold">failed to provide an unambiguous guide</span> on how to close the coffee holder.	
+                </p>
+                <h3 class="interview-question">
+                    Question 2: How do you feel about the double tap design to enter the main menu?
+                </h3>
+                <p class="interview-repsonse">
+                    Two users appreciated the <span class="bold">double-tap</span> feature, noting it helps prevent accidental activation and enhances accessibility. Conversely, one user considered it redundant, suggesting that single-tap or <span class="bold">hover</span> activation would be more efficient.
+                </p>
+                <h3 class="interview-question">
+                    Question 3: How do you like the menu panel? Does it provide all the options you want or more than enough?
+                </h3>
+                <p class="interview-repsonse">
+                    Users generally found the main menu panel <span class="bold">concise</span>, offering a reasonable number of options.  While instructions on everything else are provided, the guidance on closing the coffee holder is <span class="bold">not intuitive</span>, leading to potential misuse and confusion for users.
+                </p>
+                <h3 class="interview-question">
+                    Question 4: If you can make one improvement to this interface, what will it be?
+                </h3>   
+                <p class="interview-repsonse">
+                    All users agreed that the interface should provide clearer instructions on how to close the coffee holder. Attempts to manually push the holder back could lead to <span class="bold">long-term damage</span>. Therefore, explicit guidance on proper closure methods is necessary to prevent misuse.
+                </p>
+            </div>
+        </div>
+        <hr>
+        <div class="sub-section">
+            <h3 class="narrative">
+                Base on the interview results, we drew the following conclusions and made them into two empathy maps
+            </h3>
+            <p>
+                The <span class="bold">empathy maps</span> were created by analyzing common <span class="bold">behaviors, thoughts, feelings, and actions</span> observed during user interviews and testing sessions. By synthesizing these insights, we developed two archetypal personas that reflect the overarching user needs and challenges. Each quadrant of the empathy map—<span class="bold">"Thinks," "Feels," "Says," and "Does"</span>—was filled with patterns identified across multiple users to ensure the personas accurately represent a broad spectrum of real-world interactions with the coffee machine interface.
+            </p>
+            <div class="persona-container">
+                <div class="persona-card">
+                    <h3>Persona 1</h3> 
+                    <img src="./assets/persona1.png" alt="persona1" class="clickable-img"/>
+                    <p>
+                        Figure 1: Persona 1 is <span class="bold">an elderly male</span> visiting scholar coming in for a seminar. Technology is not his specialty, and he is a <span class="bold">first time user</span> to this coffee machine. He is rushing to get a cup of coffee before his seminar starts.
+                    </p>
+                </div>
+
+                <div class="persona-card">
+                    <h3>Persona 2</h3> 
+                    <img src="./assets/persona2.png" alt="persona2" class="clickable-img"/>
+                    <P>
+                        Figure 2: Persona 2 is a <span class="bold">sleep-deprived</span> female student who is reviewing for midterms. She has used the machine before to get hot chocolate. She decided to give a shot to coffee today for its caffeine.
+                    </P>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="storyboard-container">
+            <h3 class="narrative">
+                We constructed the storyboard base on persona 2, the sleep deprived female student. Let's take a look at her experience with the coffee machine. 👀 👀
+            </h3>
+            <img src="./assets/storyboard.png" alt="storyboards" class="clickable-img"/>
+            <p>
+                This storyboard illustrates the complete <span class="bold">user journey</span> of Sarah, a sleep-deprived student, using the coffee machine. 
+                From initial hesitation to selecting a beverage and struggling with the <span class="bold">coffee holder mechanism</span>, 
+                the storyboard highlights both the machine's usability issues and Sarah’s challenges. 
+                Ultimately, the storyboard emphasizes the need for a <span class="bold">clearer and more intuitive instruction</span> on how to close the coffee holder.
+            </p>
+        </div>
+        <div id="lightbox" class="lightbox">
+            <span class="close">&times;</span>
+            <img class="lightbox-img" id="lightbox-img">
+        </div>
+        
+        <script src="script.js"></script>
+    </body>
+</html>

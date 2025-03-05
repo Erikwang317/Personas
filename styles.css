@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Jacquarda+Bastarda+9&family=Monoton&family=Orbitron:wght@400..900&family=Silkscreen:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    color: #f4f4f4;
+}
+
+body {  
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #1b1c1c;
+    margin-top: 5vh;
+    line-height: 1.6;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    padding-top: 5vh;
+    padding-bottom: 10vh; 
+}
+
+p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    line-height: 2;
+}
+
+h3 {
+    font-family: "Silkscreen", serif;
+}
+
+hr {
+    display: block;
+    position: relative;
+    margin: 50px auto;
+    height: 0;
+    width: 100%;
+    max-height: 0;
+    font-size: 1px;
+    width: 90vw;
+    clear: both;
+    border: none;
+    border-top: 1px solid #aaaaaa;
+    border-bottom: 1px solid #ffffff;
+ }
+
+ .bold {
+    background-color: rgba(255, 255, 255, 0.1); 
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.1em;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); 
+    transition: all 0.3s ease;
+ }
+
+ .sub-section {
+    display: flex;
+    flex-direction: column;
+    max-width: 80vw;
+    gap: 20px;
+ }
+
+.narrative {
+    font-weight: 800;
+    font-family: "Black Ops One", serif;
+    margin: 20px 0px;
+    font-size: 1.5rem;
+    /* color: #e0e0e0; */
+    text-align: left;
+    line-height: 2;
+    /* text-shadow: 2px 2px 6px rgba(255, 255, 255, 0.3); */
+    color: #ffcc00;
+}
+
+.header-container {
+    text-shadow: 2px 2px 8px #bebebe;
+    margin-bottom: 6vh;
+}
+
+.interface-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+
+    p {
+        max-width: 70vw;
+        line-height: 2rem;
+    }
+}
+
+
+.interview-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    line-height: 2;
+
+}
+
+.interview-question {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: #ff8c00;
+}
+
+.persona-container {
+    margin-top: 5vh;
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+.persona-card {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+}
+
+.persona-card img {
+    max-width: 80%; 
+    height: 500px; 
+    width: auto;
+    padding: 20px;
+}
+
+
+img.clickable-img {
+    max-width: 40vw;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+img.clickable-img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7);
+}
+
+.storyboard-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 80vw;
+    margin-top: 20px;
+    gap: 40px;
+}
+
+.storyboard-container img {
+    max-width: 60vw !important;
+}
+
+
+.lightbox {
+    display: none; 
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lightbox-img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 8px;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+}
+
+
