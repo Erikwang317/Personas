@@ -28,14 +28,35 @@ p {
     line-height: 2;
 }
 
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #f4f4f4;
+    padding-bottom: 10px;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-top: 40px;
+    border-left: 5px solid #f4f4f4;
+    padding-left: 10px;
+}
+
 h3 {
-    font-family: "Silkscreen", serif;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #d1d1d1;
+}
+
+p {
+    margin-left: 4em;
+    max-width: 70vw;
 }
 
 hr {
     display: block;
     position: relative;
-    margin: 50px auto;
+    margin: 50px auto 10px;
     height: 0;
     width: 100%;
     max-height: 0;
@@ -78,7 +99,6 @@ hr {
 
 .header-container {
     text-shadow: 2px 2px 8px #bebebe;
-    margin-bottom: 6vh;
 }
 
 .interface-container {
@@ -86,11 +106,6 @@ hr {
     flex-direction: column;
     align-items: center;
     gap: 40px;
-
-    p {
-        max-width: 70vw;
-        line-height: 2rem;
-    }
 }
 
 
@@ -106,6 +121,11 @@ hr {
     font-size: 1.3rem;
     margin-bottom: 10px;
     color: #ff8c00;
+    margin-left: 2rem;
+}
+
+.interview-repsonse{
+    max-width: 70vw;
 }
 
 .persona-container {
@@ -119,16 +139,21 @@ hr {
 .persona-card {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 20px;
     align-items: center;
+    width: 100%;
+    max-width: 500px; 
+    box-sizing: border-box;
 }
 
 .persona-card img {
+    width: 80%; 
+    height: auto;
     max-width: 80%; 
-    height: 500px; 
-    width: auto;
     padding: 20px;
+    box-sizing: border-box;
 }
+
 
 
 img.clickable-img {
@@ -154,10 +179,44 @@ img.clickable-img:hover {
     gap: 40px;
 }
 
-.storyboard-container img {
-    max-width: 60vw !important;
+.storyboard-grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 10px 40px;
+    padding: 40px;
+    max-width: 90vw;
+    margin: auto;
+    border: 5px solid #000000;
+    background-color: #ffffff;
+    border-radius: 10px;
 }
 
+.storyboard-grid-item {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.storyboard-grid-item img {
+    max-width: 30vw;
+    border-radius: 8px;
+    object-fit: contain;
+    transition: transform 0.3s;
+    border: 4px solid #333;
+}
+
+.storyboard-grid-item p {
+    margin-top: 10px;
+    color: #000000;
+    font-size: 18px;
+    line-height: 1.4;
+    margin-left: 0;
+}
+
+.storyboard-grid-item img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
 
 .lightbox {
     display: none; 
